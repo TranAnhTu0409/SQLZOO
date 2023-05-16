@@ -68,7 +68,7 @@ from teacher
 
 --8.
 --Use COUNT and GROUP BY dept.name to show each department and the number of staff. Use a RIGHT JOIN to ensure that the Engineering department is listed.
-select dept.name, count(dept.name)
+select dept.name, count(teacher.name)
 from teacher right join dept
 on teacher.dept = dept.id
 group by dept.name
